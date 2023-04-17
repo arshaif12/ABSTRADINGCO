@@ -1,2 +1,2 @@
-# ABSTRADINGCO.
+# ABS TRADING CO.
 etech final project
