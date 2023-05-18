@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+  }
+  
+  .navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo img {
+    height: 70px;
+  }
+  
+  .login-register a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: orange;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 40px;
+  }
+  
+  .login-register a:hover {
+    background-color: darkorange;
+  }
+
+  .cover-image {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  
+  .cover {
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .cover-image {
+    position: relative;
+    height: 100%;
+  }
+  
+  .cover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .arrow-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+  .arrow-link {
+    display: inline-block;
+    padding: 30px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    background-color: orange; 
+    transition: opacity 0.3s;
+  }
+  
+  
+  .arrow-link:hover {
+    opacity: 0.8;
+  }
+  
+  .arrow {
+    display: inline-block;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    padding: 10px;
+    transform: rotate(45deg);
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .text-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .quote {
+    font-size: 36px;
+    padding: 10px;
+    color: #fff;
+    display: inline-block;
+    background-color: black;
+    border: 2px solid orange;
+    margin-bottom: 10px;
+  }
+  
+  .author {
+    font-size: 24px;
+    color: #fff;
+    display: block;
+    background-color: black;
+
+  }
+  
+  .author-name {
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    padding: 5px;
+  }
+
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid orange;
+    padding: 10px;
+    max-width: 1000px; 
+    max-height: 600px; 
+    margin: 0 auto;
+  }
+  .video-container video {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  #information h1 {
+    text-align: center;
+    font-size: 64px;
+  }
+  
+  #information h1::after {
+    content: "";
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 2px solid orange;
+    margin-top: 10px;
+  }
+  
+  
+  #information p {
+    text-align: justify;
+    text-align: center; 
+    border: 2px solid orange;
+    padding: 20px; 
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 40px;
+    font-size: 23px
+  }
+  
