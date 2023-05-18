@@ -1,18 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="cover.css">
+  <link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <body>
-  <div class="navbar">
+
+  <header class="navbar">
     <div class="logo">
-      <img src="logo.png" alt="Logo">
+      <a href="cover.html">
+        <img src="logo.png" alt="Logo" onclick="redirectToCoverPage()">
+      </a>
     </div>
+  
     <div class="login-register">
       <a href="login.html">Log in</a>
       <a href="register.html">Register</a>
     </div>
+  </header>
+
+<main>
+
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <div id="information">
+    <h1>ABS TRADING CO.</h1> 
   </div>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ab maxime, itaque accusantium dolorem corrupti possimus optio! Necessitatibus dicta aliquid, incidunt quam inventore voluptates, tempora ex sunt impedit fugit cupiditate?</p>
+
+  <div class="container">
+    <h2>Login</h2>
+    <form onsubmit="validateLogin(event)">
+      <div class="logo-container">
+        <img src="logo1.png" alt="Logo" class="logo1">
+      </div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <input type="submit" value="Login">
+    </form>
+    <p id="error-msg" class="error-msg"></p>
+  </div>
+
+  <div class="center-line"></div>
+
+  <div class="container5">
+    <div class="left-images">
+      <img src="image1.jpg" alt="Image 1">
+      <img src="image2.jpg" alt="Image 2">
+      <img src="image3.jpg" alt="Image 3">
+    </div>
+
+  </div>
+    
+  <footer>
+    <nav class="bottom-nav">
+      <ul>
+        <li><a href="#" class="Home">Home</a></li>
+        <li><a href="#" class="About">About</a></li>
+        <li><a href="#" class="contacts">Contacts</a></li>
+      </ul>
+    </nav>
+  </footer>
+
 </body>
 </html>

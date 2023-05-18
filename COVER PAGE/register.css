@@ -1,28 +1,224 @@
 body {
-    margin: 0;
-  }
-  
-  .navbar {
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  .logo img {
-    height: 70px;
-  }
-  
-  .login-register a {
-    color: black;
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: orange;
-    border-radius: 10px;
-    margin-left: 40px;
-  }
-  
-  .login-register a:hover {
-    background-color: darkorange;
-  }
+  margin: 0;
+}
+
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo img {
+  height: 70px;
+}
+
+.login-register a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: orange;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 40px;
+}
+
+.login-register a:hover {
+  background-color: darkorange;
+}
+
+.container {
+  position: relative;
+}
+
+.logo-container {
+  position: absolute;
+  top: 0;
+  right: 0.2;
+  margin: 30px;
+}
+
+.logo1 {
+  height: 3em;
+  width: auto;
+}
+
+
+footer {
+  background-color: black;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bottom-nav li {
+  display: inline-block;
+}
+
+.bottom-nav a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  background-color: orange;
+  margin-left: 20px;
+  border-radius: 10%;
+}
+
+.bottom-nav a.Home {
+  font-weight: bold;
+}
+
+.bottom-nav a.About {
+  font-weight: bold;
+}
+
+.bottom-nav a.contacts {
+  font-weight: bold;
+}
+.logo-container {
+  position: absolute;
+  top: 0;
+  right: 0.2;
+  margin: 30px;
+}
+
+.logo1 {
+  height: 3em;
+  width: auto;
+}
+
+.container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  position: relative; 
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: orange;
+}
+
+.container {
+  float: right;
+  margin-right: 100px;
+
+}
+
+
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+ 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  padding: 15px;
+  background-color: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff7700;
+}
+
+
+
+h1 {
+  font-size: 64px;
+  text-align: left;
+  margin-left: 450px;
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+}
+
+.left, .center {
+  outline: 2px solid orange;
+  padding: 20px;
+  margin: 10px;
+  background: white;
+}
+
+.left {
+  flex: 1;
+  float: left;
+  margin-left: 100px;
+  margin-right: 50px;
+  margin-top: 70px;
+}
+
+.center {
+  flex: 1;
+  margin-right: 100px;
+  margin-left: 50px;
+  margin-top: 70px;
+}
+
+.free {
+  margin-bottom: 10px;
+}
+
+.prem {
+  margin-bottom: 10px;
+}
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.button1 {
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}

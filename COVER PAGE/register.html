@@ -1,19 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="cover.css">
+  <link rel="stylesheet" type="text/css" href="register.css">
+  <script src="Reg.js"></script>
+
 </head>
 <body>
-  <div class="navbar">
+
+  <header class="navbar">
     <div class="logo">
       <a href="cover.html">
         <img src="logo.png" alt="Logo" onclick="redirectToCoverPage()">
       </a>
     </div>
+  
     <div class="login-register">
       <a href="login.html">Log in</a>
       <a href="register.html">Register</a>
     </div>
+    
+
+  </header>
+
+</head>
+
+<main>
+
+  
+  <h1>Subscription</h1> 
+
+
+  <div class="container">
+    <h2>Register</h2>
+    <form onsubmit="validateLogin(event)">
+      <div class="logo-container">
+        <img src="logo1.png" alt="Logo" class="logo1">
+      </div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      
+      <button type="submit" onclick="register()">Register</button>
+
+    </form>
+    <p id="error-msg" class="error-msg"></p>
   </div>
+
+  <div class="container3">
+    <div class="left">
+      <h2 class="Free">FREE </h2>
+      <ul>
+        <li>Unlock Free Lessons</li>
+        <li>Unlock Free Trading Journal</li>
+        <li>Current Trading Stock Access</li>
+      </ul>
+    </div>
+    <div class="center">
+      <h2 class="prem">PREMIUM</h2>
+      <ul>
+        <li>Unlock Premium Lessons</li>
+        <li>Unlock Premium Trading Journals</li>
+        <li>Unlock Premium Private Tradings</li>
+      </ul>
+      <button class="button1">$5 a Week</button>
+    </div>
+  </div>
+  
+</main>
+    
+
+<footer>
+    <nav class="bottom-nav">
+      <ul>
+        <li><a href="#" class="Home">Home</a></li>
+        <li><a href="#" class="About">About</a></li>
+        <li><a href="#" class="contacts">Contacts</a></li>
+      </ul>
+    </nav>
+  </footer>
+
 </body>
 </html>
